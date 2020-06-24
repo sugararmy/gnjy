@@ -1,17 +1,17 @@
 import { Routes } from '@angular/router';
 
 export const rootRouterConfig: Routes = [
-  { 
-    path: '', 
-    redirectTo: 'home/demos', 
-    pathMatch: 'full' 
+  {
+    path: '',
+    redirectTo: 'home/one',
+    pathMatch: 'full'
   },
-  { 
-    path: 'home', 
+  {
+    path: 'home',
     loadChildren: () => import('./views/home/home.module').then(m => m.HomeModule)
   },
-  { 
-    path: '**', 
+  {
+    path: '**',
     redirectTo: 'home/one'
   }
 ];
