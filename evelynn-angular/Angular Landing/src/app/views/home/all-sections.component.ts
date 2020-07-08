@@ -14,7 +14,6 @@ import { scrollTo } from '../../shared/helpers/utils';
   <app-testimonials-carousel></app-testimonials-carousel>
   <app-cta></app-cta>
   <app-pricings></app-pricings>
-  <app-contact [backgroundGray]="true"></app-contact>
   <app-footer></app-footer>
   </div>`
 })
@@ -27,6 +26,6 @@ export class AllSectionsComponent implements OnInit, OnDestroy {
   }
   ngOnDestroy() {
   }
-  
+
 
 }
